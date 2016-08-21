@@ -13,6 +13,7 @@ public class RunnableEx implements Runnable {
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
+		
 		System.out.println("I am runnable implementation"+Thread.currentThread());
 	}
 
