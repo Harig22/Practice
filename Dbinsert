@@ -1,0 +1,50 @@
+package com.payilagam;
+
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
+import java.util.Scanner;
+
+public class dbins {
+
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan =new Scanner(System.in);
+		System.out.println("Enter the data to be inserted:");
+		System.out.println("Enter the Name to be inserted:");
+        String s=scan.next();
+        System.out.println("Enter the Phoneno to be inserted:");
+        int a=scan.nextInt();
+String b="insert into details(Name,phoneno) values('"+s+"',"+a+")";
+		System.out.println(b);
+		
+		try {
+			Class.forName("com.mysql.jdbc.Driver");
+			Connection conn=DriverManager.getConnection("jdbc:mysql://localhost/Sample","root","root");
+			PreparedStatement ps=conn.prepareStatement(b);
+			Boolean rs=ps.execute();
+			
+			/*while(rs.next())
+			{
+				System.out.println(rs.getString(1));
+				System.out.println(rs.getString("name"));
+				System.out.println(rs.getString("phoneno"));
+			}*/
+			
+			
+		}
+	catch (ClassNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (SQLException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+
+		
+	}
+
+}
