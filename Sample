@@ -1,0 +1,56 @@
+public class Practice {
+int w;
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+Practice n=new Practice();
+n.display();
+Practice p=new Practice(10);
+p.display();
+p.add();
+int x=p.sub();
+System.out.println("The output of the method with the return statement is:"+x);
+	p.add(5,10);
+	}
+
+	
+	
+
+	void add()
+	{
+		int c,b;
+		c=10;
+		b=20;
+		int d=c+b;
+		System.out.println("The output for the method without return type is="+d);
+	
+	}
+	int sub()
+	{
+		int c=10;
+		int d=20;
+		int e=d-c;
+		return e;
+	}
+	void add(int a,int b)
+	{
+		int c=a+b;
+		System.out.println("The output of the parameterised method is:"+c);
+		
+	
+		
+		}
+	Practice()
+	{
+	System.out.println("The non parameterized constructor is created");
+	}
+	Practice(int a)
+	{
+		w=a;
+
+	}
+	void display()
+	{
+		System.out.println("The gloabal variable is assigned the value:"+w);
+	}
+	
