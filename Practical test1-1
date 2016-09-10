@@ -1,0 +1,53 @@
+import java.io.Reader;
+import java.util.Scanner;
+
+public class Test1 {
+	
+	public static void main(String args[])
+	{
+		int a=10;
+		long  b=15;
+		double c=15.5;
+		float d=16.5f;
+		char e='M';
+		String sr= new String("welcome to payilgam");
+		System.out.println("int is "+a+", long is "+b+", double is "+c+", float is "+d+", The String is "+sr+",  Char is "+e);
+		Scanner scan =new Scanner(System.in);
+		System.out.println("Enter the integer value:");
+		a=scan.nextInt();
+		System.out.println("Enter the decimal point value:");
+		c=scan.nextDouble();
+		System.out.println("Enter the character:");
+		 //e=Reader.next().charAt(0);
+		
+		System.out.println("Enter the string to be inserted");
+		scan.nextLine();
+		sr=scan.nextLine();
+		System.out.println("THe int is "+a);
+		System.out.println("The decimal is"+c);
+		System.out.println("The String is "+sr);
+		System.out.println("Enter the word to be printed");
+		String  v=scan.next();
+		System.out.println("Enter the no of times to be printed:");
+		int k=scan.nextInt();
+		int i=0;
+		System.out.println(" The word is printed using the for loop");
+		for( ;i<k;i++)
+		{
+			
+			
+			System.out.println(v);
+			
+		}
+		System.out.println(" The word is printed using the while loop");
+		int g=k;
+		int j=0;
+		while(j<g)
+		{
+			
+			System.out.println(v);
+			j++;
+		}
+	}
+
+}
