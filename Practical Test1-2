@@ -1,0 +1,104 @@
+import java.util.Scanner;
+
+public class Vogue  {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner scan =  new Scanner(System.in);
+		int a[]=new int[3];
+		System.out.println(" Enter the input integer values:");
+		for( int i=0;i<3;i++)
+		{
+			a[i]=scan.nextInt();
+		}
+		
+		for(int i=0;i<3;i++)
+		{
+			if(a[i]%2==0)
+			{
+				System.out.println("The no "+a[i]+"is even");
+			}
+			else
+				
+			{
+				System.out.println("The no "+a[i]+"is odd");
+			}
+		}
+		int x=a[0];
+		int y=a[1];
+		int z=a[2];
+		
+		
+		if(x>y&&x>z)
+		{
+			System.out.println("THe greatest number is:"+x);
+		}
+		else if(y>z)
+		{
+			System.out.println(" The greatest number is: "+y);
+			
+		}
+		else
+			System.out.println(" The greatest number is:"+z);
+		
+		
+		
+		if(x<y&&x<z)
+		{
+			System.out.println("THe greatest number is:"+x);
+		}
+		else if(y<z)
+		{
+			System.out.println(" The greatest number is: "+y);
+			
+		}
+		else
+			System.out.println(" The greatest number is:"+z);
+		
+		String s1= new String("JAVA");
+		String s2= new String("ANDROID");
+		String s3= new String("DOTNET");
+		int n = 0;
+		System.out.println(" Enter the selection less than three:");
+		n=scan.nextInt();
+		switch(n)
+		{
+		
+		case 1:
+		{
+			System.out.println(s1);
+		}break;
+		
+		case 2:
+		{
+			System.out.println(s2);
+			
+		}break;
+		case 3:
+		{
+			System.out.println(s3);
+		}break;
+		default:System.out.println("please enter the selection value below 3");
+		}
+		int arr[]={1,2,3,4,5,6,7,8,9,10};
+		System.out.println("Enter the value which you dont want to print: ");
+		int dn=scan.nextInt();
+		for(int i=0;i<10;i++)
+		{
+			if(arr[i]==dn){
+				continue;
+				
+			}
+			else
+			{ 
+				System.out.print(arr[i]);
+			}
+		}
+		
+		
+		
+}
+	
+	
+	
+}
