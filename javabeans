@@ -1,0 +1,68 @@
+import java.io.IOException;
+import java.util.Scanner;
+
+public class BeanUser {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		for(int i=0;i<5;i++)
+		{
+		JavaBean jb=new JavaBean();
+		jb.setStudentID(1);
+		
+		jb.setName("siva");
+		
+		
+		Scanner scan= new Scanner(System.in);
+		
+		}
+		
+		
+		
+		
+		}
+		
+	}
+
+
+//////////another class:::::::://///////
+public class JavaBean {
+	
+	private int studentID;
+	private String name;
+	
+	public void setStudentID(int studentID)
+	{
+		this.studentID=studentID;
+	}
+	
+	
+	public int getstudentID()
+	{
+		return studentID;
+	}
+	
+	public void setName(String name)
+	{
+		this.name=name;
+	}
+	
+	
+	public String getName()
+	{
+		return name;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
